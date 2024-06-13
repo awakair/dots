@@ -1,0 +1,40 @@
+theme = "gruvbox_light"
+
+[editor]
+cursorline = true
+cursorcolumn = true
+auto-format = false
+rulers = [80, 120]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator",
+        "file-modification-indicator", "version-control"]
+
+[editor.statusline.mode]
+normal = "normal"
+insert = "insert"
+select = "select"
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+space = "all"
+nbsp = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+tab = "\t"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+x = ["extend_line_below", "select_mode"]
+
