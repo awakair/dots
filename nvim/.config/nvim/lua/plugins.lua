@@ -39,18 +39,34 @@ require("lazy").setup({
 		version = "v2.*",
 	},
     -- LSP manager
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
+    {
+	    "williamboman/mason.nvim",
+	    "williamboman/mason-lspconfig.nvim",
+	    "neovim/nvim-lspconfig",
+        config = function()
+            require('config.lsp')
+        end,
+    },
     -- Reopen file at last edit position
     "farmergreg/vim-lastplace",
     -- For statusline
-    "nvim-lualine/lualine.nvim",
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function()
+            require('config.statusline')
+        end,
+    },
     -- File tree
     "preservim/nerdtree",
     -- Quoting/parenthesizing
-    "tpope/vim-surround",
+    "tpope/vim-surround", -- surrounding
+    {
+        'm4xshen/autoclose.nvim', -- autoclosing
+        config = function()
+            require('config.autoclose')
+        end,
+    },
     -- Git client
     "tpope/vim-fugitive", -- TODO: change
 })
