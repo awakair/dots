@@ -46,6 +46,12 @@ require("lazy").setup({
     "farmergreg/vim-lastplace",
     -- For statusline
     "nvim-lualine/lualine.nvim",
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    -- File tree
+    "preservim/nerdtree",
+    -- Quoting/parenthesizing
+    "tpope/vim-surround",
+    -- Git client
+    "tpope/vim-fugitive", -- TODO: change
 })
 
