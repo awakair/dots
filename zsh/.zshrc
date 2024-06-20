@@ -20,12 +20,10 @@ export EDITOR=nvim
 
 export GOPATH="$HOME/go"
 
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$HOME/.cargo/bin:$HOME/go/bin:/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$HOME/nvim-macos/bin:/opt/homebrew/opt/postgresql@15/bin:$HOME/.cargo/bin:$HOME/go/bin:/opt/homebrew/opt/llvm/bin:$PATH"
 
 # arc
-alias a="cd ~/arcadia"
-alias aj="cd ~/arcadia/junk/awakair/"
-alias at="arc checkout trunk"
+source ~/arcadia/junk/awakair/aliases 
 
 # git
 alias gc="git clone"
@@ -60,4 +58,4 @@ alias e=${EDITOR}
 # alias rm="rip"
 
 # thefuck; scc; bat; exiftool; fzf; dua-cli
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
