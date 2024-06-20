@@ -33,7 +33,6 @@ vim.opt.smartcase = true            -- but make it case sensitive if an uppercas
 
 -- Swap/Backup
 vim.opt.swapfile = false            -- disable creating swap file
-vim.opt.backupdir = '~/.cache/vim'  -- directory to store backup files
 
 -- set wildmode=longest,list   " get bash-like tab completions
 
