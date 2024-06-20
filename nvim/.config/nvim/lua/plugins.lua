@@ -112,5 +112,20 @@ require("lazy").setup({
       opts = {},
       dependencies = { "nvim-tree/nvim-web-devicons" },
     },
+    -- Ace jump
+    {
+        'ggandor/leap.nvim',
+        opts = {},
+        config = function()
+            require('leap').create_default_mappings()
+        end,
+    }
 })
+
+-- Potentially use
+-- https://github.com/folke/trouble.nvim - list all warnings/error in one place
+-- https://github.com/mrsobakin/multilayout.nvim/ - :ц becomes :w
+-- https://www.jackfranklin.co.uk/blog/code-folding-in-vim-neovim/ - fold code
+-- https://github.com/frabjous/knap - preview markown/etc
+-- https://github.com/j-hui/fidget.nvim - ui for LSP notifications and progress messages
 
