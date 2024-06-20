@@ -19,6 +19,14 @@ require("lazy").setup({
 		"onsails/lspkind.nvim",
 		event = { "VimEnter" },
 	},
+    -- Syntax highlighting
+    {
+        "nvim-treesitter/nvim-treesitter", 
+        build = ":TSUpdate",
+        config = function()
+            require('config.treesitter')
+        end,
+    },
 	-- Auto-completion engine
 	{
 		"hrsh7th/nvim-cmp",
@@ -49,7 +57,7 @@ require("lazy").setup({
     },
     -- Reopen file at last edit position
     "farmergreg/vim-lastplace",
-    -- For statusline
+    -- Statusline
     {
         "nvim-lualine/lualine.nvim",
         dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -59,15 +67,50 @@ require("lazy").setup({
     },
     -- File tree
     "preservim/nerdtree",
-    -- Quoting/parenthesizing
+    -- Quoting/parenthesizing/brackets
     "tpope/vim-surround", -- surrounding
     {
-        'm4xshen/autoclose.nvim', -- autoclosing
-        config = function()
-            require('config.autoclose')
-        end,
+        'windwp/nvim-autopairs', -- autoclose brackets
+        event = "InsertEnter",
+        config = true
     },
     -- Git client
     "tpope/vim-fugitive", -- TODO: change
+    -- Displays a popup with possible key bindings of the command you started typing
+    {
+      "folke/which-key.nvim",
+      event = "VeryLazy",
+      init = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+      end,
+      opts = {},
+    },
+    -- Smart commenting stuff
+    -- gcc/gbc in normal, gc/gb in visual
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        }
+    },
+    -- Enchance nvim UI
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {},
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        },
+    },
+    -- Highlight word under cursor
+    'RRethy/vim-illuminate',
+    -- File manager inside nvim
+    {
+      'stevearc/oil.nvim',
+      opts = {},
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
 })
 
