@@ -61,6 +61,7 @@ end
 -- 1. use `:Mason` to install corresponding LSP
 -- 2. add configuration below
 
+-- require('lspconfig').lua_ls.setup()
 -- Has secure ignore paths
 dofile("/Users/awakair/arcadia/junk/awakair/gopls.lua")
 

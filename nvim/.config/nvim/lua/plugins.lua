@@ -51,9 +51,9 @@ require("lazy").setup({
 	    "williamboman/mason.nvim",
 	    "williamboman/mason-lspconfig.nvim",
 	    "neovim/nvim-lspconfig",
-        config = function()
-            require('config.lsp')
-        end,
+      config = function()
+        require('config.lsp')
+      end,
     },
     -- Reopen file at last edit position
     "farmergreg/vim-lastplace",
@@ -68,7 +68,7 @@ require("lazy").setup({
     -- File tree
     "preservim/nerdtree",
     -- Quoting/parenthesizing/brackets
-    "tpope/vim-surround", -- surrounding
+    -- "tpope/vim-surround", -- surrounding
     {
         'windwp/nvim-autopairs', -- autoclose brackets
         event = "InsertEnter",
