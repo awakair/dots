@@ -9,7 +9,13 @@ HYPHEN_INSENSITIVE="true"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git sudo)
+plugins=(
+    git
+    sudo
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    you-should-use
+)
 
 source $ZSH/oh-my-zsh.sh
 
