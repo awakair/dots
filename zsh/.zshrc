@@ -48,7 +48,6 @@ alias fc="clang++ --std=c++20 -Wpedantic -Wall -Wextra main.cpp"
 alias fce="clang++ --std=c++20 -Wpedantic -Wall -Wextra main.cpp && ./a.out"
 alias fcei="clang++ --std=c++20 -Wpedantic -Wall -Wextra main.cpp && ./a.out < input.txt"
 alias cpplint="python3 /Users/awakair/Library/Python/3.9/lib/python/site-packages/cpplint.py"
-alias t="cd /tmp && rm main.cpp && ${EDITOR} main.cpp"
 alias cm="cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
 alias cb="cmake --build ."
 alias cbt="cmake --build . --target"
@@ -66,6 +65,10 @@ alias e=${EDITOR}
 # alias o=". ~/o.sh"
 # alias a=". ~/a.sh"
 # alias rm="rip"
+
+# process managment
+alias htop=btop
+alias t=btop
 
 # thefuck; scc; bat; exiftool; fzf; dua-cli
 # eval "$(zoxide init zsh)"
