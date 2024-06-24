@@ -22,6 +22,8 @@ vim.opt.syntax = on                 -- syntax highlighting
 vim.opt.spell = on                  -- enable spell check TODO: download language packages
 -- vim.opt.termguicolors = true        -- enable 24-bit RGB color in the TUI
 -- vim.opt.showmode = false            -- don't need the "-- INSERT --" mode hint
+vim.opt.list = true
+vim.opt.lcs = 'tab:├─,trail:•'
 
 -- Searching
 vim.opt.incsearch = true            -- search as characters are entered
