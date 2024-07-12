@@ -27,7 +27,7 @@ export EDITOR=nvim
 
 export GOPATH="$HOME/go"
 
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$HOME/.cargo/bin:$HOME/go/bin:/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$HOME/.dotnet/tools:/opt/homebrew/opt/postgresql@15/bin:$HOME/.cargo/bin:$HOME/go/bin:/opt/homebrew/opt/llvm/bin:$PATH"
 
 # arc
 if [ ! -d ~/arcadia/junk/awakair ]; then
