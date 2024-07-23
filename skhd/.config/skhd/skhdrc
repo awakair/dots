@@ -1,0 +1,18 @@
+# change window focus within space
+alt - left : yabai -m window --focus south
+alt - up : yabai -m window --focus north
+alt - down : yabai -m window --focus west
+alt - right : yabai -m window --focus east
+alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - n  : yabai -m display --focus 1
+alt - m  : yabai -m display --focus 2
+
+# stop/start/restart yabai
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service
+ctrl + alt - r : yabai --restart-service
+
+alt - w : osascript -e 'tell application "System Events" to perform action "AXPress" of (first button whose subrole is "AXCloseButton") of (first window whose subrole is "AXStandardWindow") of (first process whose frontmost is true)'
+
+alt - return : osascript -e 'tell application "iTerm2" to create window with default profile command ""'  || open -na iTerm
+alt - c : code
