@@ -68,8 +68,11 @@ alias e=${EDITOR}
 # alias rm="rip"
 
 # process managment
-alias htop=btop
 alias t=btop
 
 # thefuck; scc; bat; exiftool; fzf; dua-cli
 # eval "$(zoxide init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
